@@ -6,7 +6,7 @@ class Person {
 
   Person({required this.name, required this.age});
 
-  Person CopyWith({String? name, int? age}) {
+  Person copyWith({String? name, int? age}) {
     return Person(name: name ?? this.name, age: age ?? this.age);
   }
 }
@@ -14,7 +14,7 @@ class Person {
 void main() {
   Person p1 = Person(name: "Diwas", age: 20);
   print(p1.name);
-  p1 = p1.CopyWith(name: "Ram");
+  p1 = p1.copyWith(name: "Ram");
   print(p1.name);
   print(p1.age);
 }
